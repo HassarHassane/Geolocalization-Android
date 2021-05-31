@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="30dp"
+    android:background="@color/colorWhite"
+    android:paddingRight="30dp">
+
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="139dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@mipmap/signup" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HASSAR"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prenom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hassane"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_de_naissance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/dateN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="1999-07-30"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="hassanehassar@gmail.com"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telephone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="+212627494042"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/M"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/m" />
+
+        <RadioButton
+            android:id="@+id/F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/f" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#03A9F4"
+        android:text="@string/inscription"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

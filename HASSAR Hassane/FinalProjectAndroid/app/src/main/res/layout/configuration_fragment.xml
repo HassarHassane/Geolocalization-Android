@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".ui.config.ConfigurationFragment">
+
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="139dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@mipmap/config2" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/age_min"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/ageMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/age_max"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/ageMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="40" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rayon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <EditText
+        android:id="@+id/rayon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="80"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/M"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/m" />
+
+        <RadioButton
+            android:id="@+id/F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/f" />
+
+        <RadioButton
+            android:id="@+id/tout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tout" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#2196F3"
+        android:text="@string/enregistrer"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</LinearLayout>
